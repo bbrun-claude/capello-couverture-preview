@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Capello — Couvertures, Maçonnerie & Peintures | Chantonnay, Vendée</title>
+    <meta name="description" content="Artisan couvreur, maçon et peintre en Vendée depuis 2012. Couverture, ravalement, peinture, isolation des combles. Devis gratuit sous 48h. Chantonnay et environs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #C85A24;
+            --primary-dark: #7B2D1A;
+            --primary-light: #E8956A;
+            --charcoal: #2D2D2D;
+            --gray-dark: #444444;
+            --gray: #666666;
+            --gray-light: #F5F2EF;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        img { max-width: 100%; height: auto; }
+
+        /* HEADER */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-phone {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .header-phone:hover { color: var(--primary-dark); }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* NAV */
+        nav {
+            background: var(--charcoal);
+        }
+
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            list-style: none;
+            display: flex;
+            gap: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--white);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 520px;
+            background: linear-gradient(135deg, rgba(123,45,26,0.85), rgba(200,90,36,0.75)),
+                        url('img/presta1.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            max-width: 700px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            margin-bottom: 28px;
+            max-width: 600px;
+            opacity: 0.95;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 16px;
+            border-radius: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* SECTION */
+        section { padding: 70px 24px; }
+
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .section-title .accent-bar {
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin: 0 auto 16px;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .bg-light { background: var(--gray-light); }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card-body {
+            padding: 24px;
+        }
+
+        .service-card h3 {
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* ABOUT + GALLERY */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .about-text p {
+            color: var(--gray-dark);
+            margin-bottom: 16px;
+        }
+
+        .about-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-features li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: var(--gray-dark);
+        }
+
+        .about-features li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .about-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* CTA BANNER */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: var(--white);
+            text-align: center;
+            padding: 60px 24px;
+        }
+
+        .cta-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 14px;
+        }
+
+        .cta-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+
+        .cta-banner .btn {
+            background: var(--white);
+            color: var(--primary-dark);
+            font-size: 1rem;
+            padding: 14px 32px;
+        }
+
+        .cta-banner .btn:hover {
+            background: var(--gray-light);
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-detail p {
+            color: var(--gray-dark);
+        }
+
+        .contact-detail a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-detail a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-map {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 360px;
+            border: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--charcoal);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .header-contact { flex-direction: column; gap: 8px; }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 0.8rem;
+            }
+
+            .hero { height: 420px; }
+
+            .hero h1 { font-size: 1.8rem; }
+
+            .hero p { font-size: 1rem; }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="header-logo">
+                <img src="img/logo.png" alt="Nelson Capello — Couvertures Maçonnerie Peintures" width="250" height="55">
+            </a>
+            <div class="header-contact">
+                <a href="tel:0780300873" class="header-phone">07 80 30 08 73</a>
+                <a href="#contact" class="btn btn-primary">Devis gratuit</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Nos services</a></li>
+                <li><a href="#about">L'entreprise</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Artisan en Vendée depuis 2012</span>
+            <h1>Couverture, maçonnerie et peinture à Chantonnay</h1>
+            <p>Entretien de toiture, ravalement de façade, peinture intérieure et extérieure, isolation des combles. Intervention rapide en Vendée.</p>
+            <a href="tel:0780300873" class="btn btn-primary" style="margin-right:12px;">Appelez-nous</a>
+            <a href="#contact" class="btn btn-outline" style="color:#fff;border-color:#fff;">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-light">
+        <div class="section-inner">
+            <div class="section-title">
+                <div class="accent-bar"></div>
+                <h2>Nos prestations</h2>
+                <p>Des services complets pour l'entretien et la rénovation de votre habitat en Vendée</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img/presta1.jpg" alt="Traitement anti-mousse et nettoyage de toiture" width="400" height="200">
+                    <div class="service-card-body">
+                        <h3>Traitement de toiture</h3>
+                        <p>Démoussage, traitement hydrofuge, imperméabilisant et peinture de toiture. Nous redonnons à votre toit sa couleur d'origine et le protégeons durablement.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/presta3.jpg" alt="Peinture de toiture et ravalement de façade" width="400" height="200">
+                    <div class="service-card-body">
+                        <h3>Couverture et zinguerie</h3>
+                        <p>Réparation et rénovation de couvertures en tuiles ou ardoises. Pose de gouttières, chéneaux et descentes en zinc, PVC ou cuivre.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/facade2.jpg" alt="Ravalement de façade et peinture extérieure" width="400" height="200">
+                    <div class="service-card-body">
+                        <h3>Ravalement et peinture</h3>
+                        <p>Peinture intérieure et extérieure, ravalement de façade, enduits décoratifs. Nous embellissons et protégeons les murs de votre habitation.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/presta4.jpg" alt="Isolation thermique et phonique des combles" width="400" height="200">
+                    <div class="service-card-body">
+                        <h3>Isolation des combles</h3>
+                        <p>Isolation thermique et phonique de vos combles pour un confort optimal et des économies d'énergie. Matériaux certifiés et pose soignée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-title" style="text-align:left;margin-bottom:24px;">
+                        <div class="accent-bar" style="margin:0 0 16px;"></div>
+                        <h2>Votre artisan de confiance en Vendée</h2>
+                    </div>
+                    <p>Depuis 2012, l'entreprise <strong>Nelson Capello</strong> intervient à Chantonnay et dans toute la Vendée pour vos travaux de couverture, maçonnerie et peinture.</p>
+                    <p>Nous mettons notre savoir-faire au service de votre habitat : de l'entretien courant de votre toiture à la rénovation complète de votre façade, en passant par l'isolation de vos combles.</p>
+                    <h3>Pourquoi nous choisir</h3>
+                    <ul class="about-features">
+                        <li>Artisan qualifié, expérience confirmée depuis 2012</li>
+                        <li>Produits certifiés de qualité professionnelle</li>
+                        <li>Estimation gratuite sous 48 heures</li>
+                        <li>Intervention en Vendée : Chantonnay, La Roche-sur-Yon, Les Sables-d'Olonne et environs</li>
+                        <li>Travaux soignés et respect des délais</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="img/facade1.jpg" alt="Véhicules de l'entreprise Nelson Capello sur un chantier en Vendée" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+        <h2>Un projet de rénovation en Vendée ?</h2>
+        <p>Contactez-nous pour une estimation gratuite, sans engagement, sous 48 heures.</p>
+        <a href="tel:0780300873" class="btn">07 80 30 08 73</a>
+    </div>
+
+    <!-- REALISATIONS -->
+    <section id="realisations" class="bg-light">
+        <div class="section-inner">
+            <div class="section-title">
+                <div class="accent-bar"></div>
+                <h2>Nos réalisations</h2>
+                <p>Quelques exemples de chantiers réalisés en Vendée</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/presta2.jpg" alt="Nettoyage haute pression de toiture" width="400" height="240">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/presta3.jpg" alt="Application de peinture sur toiture" width="400" height="240">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/presta4.jpg" alt="Travaux d'isolation de combles" width="400" height="240">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-inner">
+            <div class="section-title">
+                <div class="accent-bar"></div>
+                <h2>Contactez-nous</h2>
+                <p>Pour un devis gratuit ou toute question, n'hésitez pas à nous appeler</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">&#9742;</div>
+                        <div>
+                            <p><strong>Téléphone</strong></p>
+                            <p><a href="tel:0780300873">07 80 30 08 73</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">&#9993;</div>
+                        <div>
+                            <p><strong>Email</strong></p>
+                            <p><a href="mailto:vendeecapello85@gmail.com">vendeecapello85@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">&#9873;</div>
+                        <div>
+                            <p><strong>Adresse</strong></p>
+                            <p>3 Rue de la Cour<br>85110 Chantonnay</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">&#9200;</div>
+                        <div>
+                            <p><strong>Zone d'intervention</strong></p>
+                            <p>Chantonnay, La Roche-sur-Yon, Les Sables-d'Olonne, Fontenay-le-Comte et toute la Vendée</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.8!2d-1.0736589!3d46.6454147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480691b7f13972a3%3A0x1a114d049aadf2cc!2s3+Rue+de+la+Cour%2C+85110+Chantonnay!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Nelson Capello</strong> — Couvertures, Maçonnerie & Peintures</p>
+        <p>3 Rue de la Cour, 85110 Chantonnay — <a href="tel:0780300873">07 80 30 08 73</a></p>
+        <p style="margin-top:12px;font-size:0.8rem;">SIREN 802 223 057 — Artisan en Vendée depuis 2012</p>
+    </footer>
+
+</body>
+</html>
